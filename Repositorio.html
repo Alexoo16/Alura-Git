@@ -1,0 +1,24 @@
+<meta charset = "UTF-8">
+
+<h1>TABLAS DE MULTIPLICAR</h1>
+
+<script>
+
+    function Imprimir(Texto){
+        document.write(Texto);
+        SaltoLinea();
+    }
+
+    function SaltoLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    var Numero = parseInt(prompt("Ingrese un número entero para hallar su tabla de multiplicar"));
+    var Max = parseInt(prompt("Digite hasta que número desea multiplicar (empezando desde el 1)"));
+
+    for(var i=0; i<=Max; i++){
+        Imprimir(" " + Numero + " multiplicado por " + i + " equivale a: " + (Numero*i));
+    }
+
+</script>
